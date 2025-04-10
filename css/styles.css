@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem 2rem;
   background: #fff;
   color: #000;
@@ -24,14 +25,20 @@ body {
 .navbar .menu-toggle {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
 }
 .navbar .menu-toggle span {
-  height: 3px;
-  width: 25px;
+  height: 2px;
+  width: 18px;
   background: #000;
-  margin: 4px 0;
-  transition: 0.3s;
+  border-radius: 1px;
+  transition: all 0.3s ease;
 }
 .navbar nav ul {
   display: flex;
@@ -50,6 +57,9 @@ body {
 .navbar nav ul li a:hover {
   color: #c08a40;
 }
+.navbar nav.open ul {
+  display: flex;
+}
 .navbar .search-login {
   display: flex;
   align-items: center;
@@ -64,7 +74,6 @@ body {
   padding: 0.5rem 2rem 0.5rem 0.5rem;
   border: none;
   border-bottom: 1px solid gray;
-  border-radius: 0;
   outline: none;
   font-size: 14px;
 }
@@ -90,7 +99,6 @@ body {
 }
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap;
     padding: 1rem 1rem;
   }
   .navbar .menu-toggle {
@@ -98,24 +106,42 @@ body {
   }
   .navbar nav {
     width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
   }
   .navbar nav ul {
     flex-direction: column;
-    width: 100%;
-    gap: 0;
+    width: 92%;
+    margin: 0.5rem auto 0 auto;
     background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
     display: none;
   }
   .navbar nav ul li {
-    border-top: 1px solid #ddd;
-    padding: 0.8rem 1rem;
+    border-top: 1px solid #eee;
+    padding: 0.75rem 1.25rem;
+  }
+  .navbar nav ul li:first-child {
+    border-top: none;
   }
   .navbar nav ul li a {
     display: block;
     width: 100%;
+    color: #000;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .navbar nav.open {
+    position: absolute;
+    top: 50px;
   }
   .navbar nav.open ul {
     display: flex;
+    gap: 0rem;
   }
   .navbar .search-login {
     width: 100%;

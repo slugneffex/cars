@@ -113,6 +113,15 @@ const listingsData = [
   },
 ];
 
+// navbar
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.navbar nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+
+
 //hero section
 let index = 0;
 const slides = document.querySelectorAll(".slides img");
