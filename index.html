@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collector Chassis</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="navbar">
+      <img src="images/logo.png" alt="Red Car" />
+      <nav>
+        <ul>
+          <li><a href="#">Auctions</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">General Listing</a></li>
+          <li><a href="#">Submit Vehicle</a></li>
+          <li><a href="#">How it Works</a></li>
+        </ul>
+      </nav>
+      <div class="search-login">
+        <div class="input-serch">
+          <input type="text" placeholder="Search for Cars..." />
+          <img src="./images//search.svg" alt="">
+        </div>
+        <button class="login-btn">Login</button>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="banner">
+      <div class="carousel">
+        <div class="slides">
+          <img src="images/hero/car1.png" alt="Red Car" />
+          <img src="images/hero/car2.png" alt="Red Car" />
+        </div>
+        <div class="banner-text">
+          <h1>COOL COLLECTIONS<br />AUCTIONS & GENERAL LISTINGS</h1>
+          <div class="button-wrapper">
+            <button class="more-btn">Get Started →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cool Collections Section -->
+    <section class="collections">
+      <h2 class="section-title">COOL COLLECTIONS</h2>
+      <div class="collection-grid" id="collectionGrid"></div>
+      <div class="button-wrapper">
+        <button class="more-btn">MORE COLLECTIONS →</button>
+      </div>
+    </section>
+
+    <!-- Auctions Section -->
+    <section class="auctions">
+      <h2 class="section-title">AWESOME COLLECTOR AUCTIONS</h2>
+      <div class="auction-grid" id="auctionGrid"></div>
+      <div class="button-wrapper">
+        <button class="more-btn">MORE AUCTIONS →</button>
+      </div>
+    </section>
+
+
+    <!-- latest news and general listing -->
+    <section class="news-listings">
+      <div class="news-section">
+        <h3>LATEST NEWS</h3>
+        <div id="newsContainer"></div>
+        <div class="button-wrapper">
+          <button class="more-btn">READ MORE NEWS →</button>
+        </div>
+      </div>
+  
+      <div class="listings-section">
+        <h3>GENERAL LISTINGS</h3>
+        <div id="listingContainer"></div>
+        <div class="button-wrapper">
+          <button class="more-btn">MORE GENERAL LISTINGS →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- upcoming events -->
+    <section class="event-highlight">
+      <div class="event-container">
+        <div class="event-text">
+          <span class="label">Upcoming Events</span>
+          <p class="location">The Golf Club of Amelia Island, Amelia Island</p>
+          <h2 class="title">Amelia Island Concours d'Elegance</h2>
+          <p class="date">March 4th - 5th, 2023</p>
+          <div class="button-wrapper">
+            <button class="more-btn">More Events →</button>
+          </div>
+        </div>
+        <div class="event-image">
+          <img src="images/event-main.png" alt="Event Car" />
+        </div>
+      </div>
+    </section>
+
+    <!-- looking to sell your car -->
+    <section class="sell-car">
+      <div class="sell-container">
+        <h2>LOOKING TO SELL YOUR CAR?</h2>
+        <p>Free to List</p>
+      </div>
+      <div class="sell-action">
+        <button class="btn-sell">SUBMIT YOUR COLLECTOR VEHICLE NOW →</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">News</a>
+        <a href="#">Fees</a>
+        <a href="#">Photo Tips</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </nav>
+      <hr />
+
+      <img class="logo" src="images/footer-logo.png" alt="Red Car" class="footer-logo" />
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+
+      <div class="newsletter">
+        <p>Sign up for our weekly newsletter</p>
+        <input type="email" placeholder="Enter your email here..." />
+        <button>→</button>
+      </div>
+      <hr />
+      <small
+        >Copyright © 2018-2020 Collector Chassis, Inc. All Rights
+        Reserved.</small
+      >
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
